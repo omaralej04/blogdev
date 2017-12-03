@@ -18,5 +18,21 @@ class UsersTableSeeder extends Seeder
             'created_at' => \Carbon\Carbon::now(),
             'updated_at' => \Carbon\Carbon::now(),
         ]);
+
+        DB::table('users')->insert([
+            'name' => 'Juan',
+            'email' => 'juanberriz5@gmail.com',
+            'password' => bcrypt('27769708'),
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
+
+        DB::table('users')->insert([
+            'name' => 'Emilio',
+            'email' => 'panchistolas01@gmail.com',
+            'password' => bcrypt('az0909az'),
+            'created_at' => \Carbon\Carbon::now(),
+            'updated_at' => \Carbon\Carbon::now(),
+        ]);
     }
 }
